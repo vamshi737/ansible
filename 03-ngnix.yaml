@@ -13,3 +13,4 @@
     ansible.builtin.service:
       name: ngnix
       state: started
+      enabled: yes
