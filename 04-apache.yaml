@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-    -name: install apache (RHEL/Centos)
+    -name: install apache (RHEL/CentOs)
      ansible.builtin.yum:
      name: httpd
      state: present
