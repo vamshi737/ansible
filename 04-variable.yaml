@@ -5,6 +5,7 @@
     COURSE: "DevOps with AWS"
     DURATION: "120HRS"
     trainer: "shiva"
+    
   - name: print the information
     ansible.builtin.debug:
      msg: "HI, i am vamshi i am learning devops with aws,duration is: 120hrs"
