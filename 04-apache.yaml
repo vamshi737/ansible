@@ -3,7 +3,7 @@
   become: yes
   tasks:
     -name: install apache (RHEL/Centos)
-     ansible.built.in.yum:
+     ansible.builtin.yum:
      name: httpd
      state: present
 
