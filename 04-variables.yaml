@@ -1,0 +1,7 @@
+- name: variables to print
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+     msg: "eh i am learning devops"
+  
