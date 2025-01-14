@@ -1,4 +1,4 @@
-- name: apache install and run 
+- name: install and start apache 
   hosts: web
   become: yes
   tasks:
