@@ -1,0 +1,11 @@
+- name: apache install and run 
+  hosts: web
+  become: yes
+  tasks:
+    -name: install apache (RHEL/Centos)
+     ansible.built.in.package:
+     name: httpd
+     state: present
+     
+
+
