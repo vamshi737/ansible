@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: print the information
-     ansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "HI, i am vamshi i am learning devops with aws,duration is: 120hrs"
