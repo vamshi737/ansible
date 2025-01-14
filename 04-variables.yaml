@@ -3,5 +3,5 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-     msg: "eh i am learning devops"
+     msg: "10 12 14"
   
