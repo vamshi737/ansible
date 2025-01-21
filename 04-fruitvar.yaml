@@ -1,0 +1,12 @@
+- name: print the fruit list
+ hosts: web
+ tasks:
+   - name: define the fruit list 
+     vars:
+     fruits:
+           - mango 
+           - bannana
+           - apple 
+   -ansible.builtin.debug:
+      msg: "i like {{item}}"
+    loop: "{{fruits}}"
