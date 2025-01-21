@@ -4,7 +4,7 @@
     global_course: "ansible"
     global_duration: "120 hrs"
     global_trainer: "vamshi panjala"
- tasks:
+  tasks:
    - name: print global variables
     ansible.builtin.debug:
       msg: "play level variables - course: {{global_course}}, duration: {{global_duration}}, trainer: {{global_trainer}}"
