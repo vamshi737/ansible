@@ -1,0 +1,9 @@
+- name: simple practice with variable ansible
+  hosts: web
+  vars:
+    course_name: "devops"
+  tasks:
+  - name: print  sample variable
+    ansible.builtin.debug:
+      msg: "the course_name is: {{course_name}}"
+  
