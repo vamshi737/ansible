@@ -3,5 +3,5 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-     msg: "10 12 14"
+     msg: "10 12 14"15"
   
