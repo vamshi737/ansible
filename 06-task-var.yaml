@@ -7,7 +7,7 @@
   tasks:
    - name: print global variables
     ansible.builtin.debug:
-      msg: "play level variables - course: {{global_course}}, duration: {{global_duration}}, trainer: {{global_trainer}}"
+      msg: "play level variables - course: {{ global_course }}, duration: {{ global_duration }}, trainer: {{ global_trainer }}"
 
 
 
