@@ -9,4 +9,4 @@
            - apple 
    ansible.builtin.debug:
       msg: "i like {{item}}"
-    loop: "{{fruits}}"
+   loop: "{{fruits}}"
