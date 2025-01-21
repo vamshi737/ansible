@@ -1,0 +1,13 @@
+- name: loop over user data
+  hosts: web
+  tasks:
+    - name: create multiple user account 
+      vars:
+        users:
+          - name: vamshi 
+            shell: /bin/bash
+          - name: bob
+            shell: /bin/zsh
+    ansible.builtin.debug:
+      msg: "creating user: {{item.name}}with shell {{item shell}}"
+      loop" "{{users}}"
