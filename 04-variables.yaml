@@ -1,7 +1,6 @@
 - name: variables to print
   hosts: web
   tasks:
-  - name: print the information
-    ansible.builtin.debug:
-     msg: "10 12 14"15"
-  
+    - name: print the information
+      ansible.builtin.debug:
+        msg: "10 12 14\"15"
