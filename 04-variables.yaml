@@ -5,13 +5,12 @@
       ansible.builtin.debug:
         msg: "10 12 14\"15"
 
-        -name: print a new message with variables
-        hosts: web
+        - name: print a new message with variables
         vars:
         my_name: "vamshi"
         my_age: 24
     tasks:
-      -name: print variables
-      anisible.builtin.debug:
-      msg "hello, my name is {{my_name}} and i am {{my_age}} years old."        
+      - name: print variables
+      ansible.builtin.debug:
+      msg:  "hello, my name is {{my_name}} and i am {{my_age}} years old."        
 
