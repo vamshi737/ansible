@@ -4,7 +4,7 @@
     course_name: "basic devops"
     duration: "4 days"
   tasks:
-  - name: print the course name
+    - name: print the course name
     ansible.builtin.deburg:
       msg: "the course name is {{course_name}}"
-      
+
