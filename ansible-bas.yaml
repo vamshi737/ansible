@@ -1,10 +1,29 @@
-- name: expanded practice with variables in ansible
+# - name: expanded practice with variables in ansible
+#   hosts: web
+#   vars:
+#     course_name: "basic devops"
+#     duration: "4 days"
+#   tasks:
+#     - name: print the course name
+#       ansible.builtin.deburg:
+#         msg: "the course name is {{course_name}}"
+
+- name: Expanded practice with variables in Ansible
   hosts: web
   vars:
-    course_name: "basic devops"
-    duration: "4 days"
+    course_name: "Ansible Basics"
+    duration: "3 days"
   tasks:
-    - name: print the course name
-      ansible.builtin.deburg:
-        msg: "the course name is {{course_name}}"
+    - name: Print the course name
+      ansible.builtin.debug:
+        msg: "The course name is: {{ course_name }}"
 
+    - name: Print the course duration
+      ansible.builtin.debug:
+        msg: "The course duration is: {{ duration }}"
+
+    - name: Use a task-level variable
+      vars:
+        trainer: "John Doe"
+      ansible.builtin.debug:
+        msg: "The trainer for the course is: {{ trainer }}"
