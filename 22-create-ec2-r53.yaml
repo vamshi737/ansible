@@ -41,8 +41,7 @@
   #     record: "{{ item.item }}.{{ zone }}" #mysql.daws81s.online
   #     type: A
   #     ttl: 1
-  #     value: "{{ item.instances[0].private_ip_address }}"                                   # 58 4 sep
-  #     wait: true
+  #     value: "{{ item.instances[0].private_ip_address }}"                                  
   #     overwrite: true
   #   loop: "{{ ec2_instances.results }}"
 
